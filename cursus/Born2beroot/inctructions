@@ -1,0 +1,136 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    inctruction                                        :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: enarindr <enarindr@student.42antanana      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/04/15 07:09:30 by enarindr          #+#    #+#              #
+#    Updated: 2024/04/15 17:58:19 by enarindr         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#inctaller sudo
+apt-get install sudo
+
+#ajouter une utilisateur
+usermod -aG sudo user_name
+	#checker si l'utilisateur est dans le groupe sudo
+	getent group sudo
+	#ouvrir le sudoers file
+	sudo visudo
+	#Donner les privileges sudo a l'utilisateur dans le fichier visudo
+	user_name ALL=(ALL) ALL
+
+#configuration SSH (Secure Shell Host)
+	#installer le server ssh
+	sudo apt install openssh-server
+	#checker le status de l'ssh
+	sudo systemctl status ssh
+	#changer le port de la connexion par ssh
+	sudo vim /etc/ssh/sshd_config (changer le #port par port voulu)
+	#checker si la modification c'est bien fait
+	sudo grep Port /etc/ssh/sshd_config
+	#redemarer le service ssh
+	sudo service ssh restart
+
+#configuration de ufw (uncomplicated Firewall)
+	#installer ufw
+	apt-install ufw
+	#voir le status
+	sudo ufw status
+	#connaitre les regles par defaut
+	sudo vim /etc/default/ufw
+	#autoriser toutes les connexion venanr de l'exterieur
+	sudo ufw default allow incoming
+	#bloquer toutes les connexions vers l'extrerieur
+	sudo ufw default deny outgoing
+
+	#autoriser le port lie a l'ssh
+	sudo ufw allow port_num/protocole (tcp ou utc) // pour autoriser les 2, on ne met rien
+	#activer ufw (il faut bien verifier de ne pas etre bloquer a l'exterieur)
+	sudo ufw enable
+	#lister les regles dans ufw
+	sudo ufw status 
+	sudo ufw status numbered (ajouter un chiffre correspondant a chaque regle)
+	sudo ufw status verbose
+	#suprimer une regle
+	sudo ufw delete rules_num
+	#liste de tous les regles d'application dans ufw
+	sudo ufw app list
+	sudo ufw allow "rulle name"
+	#reinitialiser ufw
+	sudo ufw reset
+	#recharger une configuration
+	sudo ufw reload
+
+#ajouter un utilisateur
+sudo adduser user_name
+#creer un group
+sudo groupadd group_name
+#ajouter un utilsateur dans un groupe
+sudo usermod -g group_name user_name
+sudo usermod -G group_name user_name //rajouter des groupes suplementaires a l'utilisateur
+#verification ds group de l'utilisateur
+id user_name
+#verification des parametres de mot de passe d'un groupe
+
+#set password rules
+	#install a password quality check library
+	sudo apt-get install libpam-pwquality
+#gerer http
+sudo apt install lighttpd
+#installer mariadb-sever
+#installer php-cgi php-mysql
+
+lighty-enable-mod fastcgi
+lighty-enable-mod fastcgi-php
+	# fichier de configuration
+	cd /etc/pam.d
+	# fichier de configuration des lois du pwd
+	vim common-password
+		minlen=x /longueur minim
+		ucredit=-1 /au moin une majuscule
+		lcredit=-1 /au moin une minuscule
+		dcredit=-1 /au moin une digit
+		ocredit=-1 /au moin une caractere speciale
+	#changer le pwd d'un utilisateur
+	sudo passwd user_name
+
+# voir tous les historique de commande
+history
+	#execute cette commande
+	!comande_number
+	#supprimer l'historique du shell
+	history -c
+	history -w // supprimer l'historique de tous les shell
+
+#cron et crontab
+	#editer cron
+	crontab -e
+	bash monitoring.sh
+#awk
+
+#lighttpd
+
+#hostname
+hostnamectl set-hostname <hostname>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+jdhvbjdhl
+kl
