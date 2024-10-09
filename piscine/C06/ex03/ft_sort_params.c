@@ -42,30 +42,30 @@ void	ft_swap_str(char **s1, char **s2)
 	*s2 = temp;
 }
 
-int	main(int argc, char *argv[])
-{
-	int	i;
-	int	j;
+// int	main(int argc, char *argv[])
+// {
+// 	int	i;
+// 	int	j;
 
-	i = 1;
-	while (i < argc - 1)
-	{
-		j = i + 1;
-		if (ft_strcmp(argv[i], argv[j]) <= 0)
-		{
-			i++;
-		}
-		else if (ft_strcmp(argv[i], argv[j]) > 0)
-		{
-			ft_swap_str(&argv[i], &argv[j]);
-			i = 1;
-		}
-	}
-	i = 1;
-	while (i < argc)
-	{
-		ft_putstr(argv[i]);
-		write(1, "\n", 1);
-		i++;
-	}
-}
+// 	i = 1;
+// 	while (i < argc - 1)
+// 	{
+// 		j = i + 1;
+// 		if (ft_strcmp(argv[i], argv[j]) <= 0)
+// 		{
+// 			i++;
+// 		}
+// 		else if (ft_strcmp(argv[i], argv[j]) > 0)
+// 		{
+// 			ft_swap_str(&argv[i], &argv[j]);
+// 			i = 1;
+// 		}
+// 	}
+// 	i = 1;
+// 	while (i < argc)
+// 	{
+// 		ft_putstr(argv[i]);
+// 		write(1, "\n", 1);
+// 		i++;
+// 	}
+// }
