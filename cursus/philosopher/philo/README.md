@@ -2,7 +2,6 @@
 
 ![C](https://img.shields.io/badge/Language-C-red?style=for-the-badge&logo=c)
 ![Concurrency](https://img.shields.io/badge/Concurrency-Threads-blue?style=for-the-badge&logo=pthreads)
-![Dining Philosophers](https://img.shields.io/badge/Algorithm-Turk-yellow?style=for-the-badge&logo=thealgorithms)
 
 ## 🚀 Introduction
 
