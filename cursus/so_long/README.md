@@ -10,9 +10,6 @@
 
 L'objectif est de cr\u00e9er un jeu simple o\u00f9 le joueur doit traverser une carte en r\u00e9cup\u00e9rant des objets et en atteignant la sortie tout en \u00e9vitant des obstacles.
 
-📷 *Exemple du jeu :*  
-*(Ajoute ici une capture d'\u00e9cran du jeu)*  
-
 ## 📌 Objectifs du projet
 
 🔹 Cr\u00e9er une carte et g\u00e9rer son affichage avec **MiniLibX**.  
