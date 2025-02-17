@@ -51,8 +51,8 @@ Le script `monitoring.sh` permet d'afficher des informations en temps réel sur 
 
 1️⃣ **Cloner le dépôt** :
 ```bash
-git clone https://github.com/ton_github/born2beroot.git
-cd born2beroot
+git clone https://github.com/nariIng/42_cursus_project.git
+cd cursus/Born2beroot
 ```
 
 2️⃣ **Configurer les fichiers de sécurité** :
