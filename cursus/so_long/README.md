@@ -27,6 +27,20 @@ L'objectif est de créer un jeu simple où le joueur doit traverser une carte en
 - **Gestion de la mémoire** : `malloc`, `free`  
 - **Gestion d'événements** : touches clavier et mise à jour de la fenêtre
 
+## ⚙️ Configuration et Dépendances
+
+### Linux
+Avant de compiler le projet sur Linux, assure-toi d'installer les dépendances suivantes :
+```bash
+sudo apt-get install libxext-dev libx11-dev libmlx-dev
+```
+
+### macOS
+Pour macOS, installe **Homebrew** et la bibliothèque MiniLibX :
+```bash
+brew install minilibx
+```
+
 ## 📂 Arborescence du projet
 
 ```
@@ -34,20 +48,32 @@ L'objectif est de créer un jeu simple où le joueur doit traverser une carte en
  ┣ 📜 README.md
  ┣ 📜 so_long.h
  ┣ 📜 Makefile
- ┣ 📜 game.c
+ ┣ 📜 draw.c
+ ┣ 📜 enemy.c
+ ┣ 📜 ennemi_moov.c
+ ┣ 📜 error.c
+ ┣ 📜 exit.c
+ ┣ 📜 ft_key.c
+ ┣ 📜 init.c
+ ┣ 📜 key.h
+ ┣ 📜 load.c
+ ┣ 📜 main.c
  ┣ 📜 map.c
- ┣ 📜 player.c
- ┣ 📜 render.c
- ┣ 📜 utils.c
+ ┣ 📜 map_utiles.c
+ ┣ 📜 negativ_moov.c
+ ┣ 📜 position.c
+ ┣ 📜 positiv_moov.c
+ ┣ 📜 set_get_map.c
+ ┣ 📜 so_long_utiles.c
+ ┣ 📜 wall_error.c
  ┣ 📂 assets
  ┃ ┣ 🖼️ player.png
  ┃ ┣ 🖼️ wall.png
  ┃ ┣ 🖼️ collectable.png
  ┃ ┣ 🖼️ exit.png
  ┃ ┗ 🖼️ background.png
- ┣ 📂 maps
- ┃ ┣ 📜 map1.ber
- ┃ ┗ 📜 map2.ber
+ ┣ 📜 map.ber
+ ┗ 📜 map2.ber
 ```
 
 📷 *Aperçu d'une carte de jeu :*  
@@ -89,8 +115,11 @@ make
 
 3️⃣ **Lancer le jeu** :
 ```bash
-./so_long map1.ber
+./so_long map.ber
 ```
+
+📷 *Capture d’écran du jeu en cours d’exécution :*  
+*(Ajoute ici une capture d’écran du jeu lancé)*  
 
 ## 🏆 Conclusion
 
@@ -100,5 +129,5 @@ Le projet **So_Long** est une introduction passionnante à la **programmation de
 
 ---
 
-🔗 **Contact** : [LinkedIn](https://www.linkedin.com/in/ton-profil/) | [GitHub](https://github.com/ton_github)
+🔗 **Contact** : [LinkedIn](www.linkedin.com/in/emmanuela-narindranjanahary-7194272a7) | [GitHub](https://github.com/nariIng/)
 
