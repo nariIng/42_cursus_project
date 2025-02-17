@@ -50,7 +50,7 @@
 1️⃣ **Cloner le dépôt** :
 ```bash
 git@github.com:nariIng/42_cursus_project.git
-cd cursus/Minishell
+cd 42_cursus_project/cursus/Minishell
 ```
 
 2️⃣ **Compiler le projet** :
