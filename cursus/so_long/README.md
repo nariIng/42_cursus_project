@@ -6,37 +6,37 @@
 
 ## 🎮 Introduction
 
-**So_Long** est un projet de l'école **42** qui consiste à développer un petit jeu en **2D** en utilisant la bibliothèque graphique **MiniLibX**.
+**So_Long** est un projet de l'\u00e9cole **42** qui consiste \u00e0 d\u00e9velopper un petit jeu en **2D** en utilisant la biblioth\u00e8que graphique **MiniLibX**.
 
-L'objectif est de créer un jeu simple où le joueur doit traverser une carte en récupérant des objets et en atteignant la sortie tout en évitant des obstacles.
+L'objectif est de cr\u00e9er un jeu simple o\u00f9 le joueur doit traverser une carte en r\u00e9cup\u00e9rant des objets et en atteignant la sortie tout en \u00e9vitant des obstacles.
 
 📷 *Exemple du jeu :*  
-*(Ajoute ici une capture d'écran du jeu)*  
+*(Ajoute ici une capture d'\u00e9cran du jeu)*  
 
 ## 📌 Objectifs du projet
 
-🔹 Créer une carte et gérer son affichage avec **MiniLibX**.  
-🔹 Implémenter un système de mouvement pour le personnage.  
-🔹 Gérer les interactions avec les objets et la sortie.  
+🔹 Cr\u00e9er une carte et g\u00e9rer son affichage avec **MiniLibX**.  
+🔹 Impl\u00e9menter un syst\u00e8me de mouvement pour le personnage.  
+🔹 G\u00e9rer les interactions avec les objets et la sortie.  
 🔹 Optimiser l'affichage pour garantir de bonnes performances.  
 
 ## 🛠️ Technologies & Outils
 
 - **Langage** : C  
-- **Bibliothèque graphique** : MiniLibX  
-- **Gestion de la mémoire** : `malloc`, `free`  
-- **Gestion d'événements** : touches clavier et mise à jour de la fenêtre
+- **Biblioth\u00e8que graphique** : MiniLibX  
+- **Gestion de la m\u00e9moire** : `malloc`, `free`  
+- **Gestion d'\u00e9v\u00e9nements** : touches clavier et mise \u00e0 jour de la fen\u00eatre
 
-## ⚙️ Configuration et Dépendances
+## ⚙️ Configuration et D\u00e9pendances
 
 ### Linux
-Avant de compiler le projet sur Linux, assure-toi d'installer les dépendances suivantes :
+Avant de compiler le projet sur Linux, assure-toi d'installer les d\u00e9pendances suivantes :
 ```bash
 sudo apt-get install libxext-dev libx11-dev libmlx-dev
 ```
 
 ### macOS
-Pour macOS, installe **Homebrew** et la bibliothèque MiniLibX :
+Pour macOS, installe **Homebrew** et la biblioth\u00e8que MiniLibX :
 ```bash
 brew install minilibx
 ```
@@ -67,28 +67,43 @@ brew install minilibx
  ┣ 📜 so_long_utiles.c
  ┣ 📜 wall_error.c
  ┣ 📂 assets
- ┃ ┣ 🖼️ player.png
- ┃ ┣ 🖼️ wall.png
- ┃ ┣ 🖼️ collectable.png
- ┃ ┣ 🖼️ exit.png
- ┃ ┗ 🖼️ background.png
+ ┃ ┣ 🖼️ 0_floor.xpm
+ ┃ ┣ 🖼️ 1_wall.xpm
+ ┃ ┣ 🖼️ C_item.xpm
+ ┃ ┣ 🖼️ E_exit_closed.xpm
+ ┃ ┣ 🖼️ E_exit_open.xpm
+ ┃ ┣ 🖼️ enemy.xpm
+ ┃ ┣ 🖼️ game_finish.xpm
+ ┃ ┣ 🖼️ game_over.xpm
+ ┃ ┣ 🖼️ p_d[0].xpm
+ ┃ ┣ 🖼️ p_d[1].xpm
+ ┃ ┣ 🖼️ p_d[2].xpm
+ ┃ ┣ 🖼️ p_l[0].xpm
+ ┃ ┣ 🖼️ p_l[1].xpm
+ ┃ ┣ 🖼️ p_l[2].xpm
+ ┃ ┣ 🖼️ p_r[0].xpm
+ ┃ ┣ 🖼️ p_r[1].xpm
+ ┃ ┣ 🖼️ p_r[2].xpm
+ ┃ ┣ 🖼️ p_u[0].xpm
+ ┃ ┣ 🖼️ p_u[1].xpm
+ ┃ ┗ 🖼️ p_u[2].xpm
  ┣ 📜 map.ber
  ┗ 📜 map2.ber
 ```
 
-📷 *Aperçu d'une carte de jeu :*  
+📷 *Aper\u00e7u d'une carte de jeu :*  
 *(Ajoute ici une image d'une carte du jeu)*  
 
-## 🔄 Fonctionnalités Implémentées
+## 🔄 Fonctionnalit\u00e9s Impl\u00e9ment\u00e9es
 
 ✅ Chargement et affichage de la carte.  
 ✅ Mouvements du joueur (haut, bas, gauche, droite).  
-✅ Récupération des objets.  
+✅ R\u00e9cup\u00e9ration des objets.  
 ✅ Gestion de la sortie du niveau.  
 ✅ Affichage graphique avec MiniLibX.  
 
 📷 *Illustration du mouvement du joueur :*  
-*(Ajoute ici une animation ou une capture d’écran montrant un déplacement du joueur)*  
+*(Ajoute ici une animation ou une capture d\u2019\u00e9cran montrant un d\u00e9placement du joueur)*  
 
 ## 🎮 Commandes du jeu
 
@@ -96,13 +111,13 @@ brew install minilibx
 |---------|--------|
 | W / ↑ | Avancer |
 | S / ↓ | Reculer |
-| A / ← | Aller à gauche |
-| D / → | Aller à droite |
+| A / ← | Aller \u00e0 gauche |
+| D / → | Aller \u00e0 droite |
 | ESC | Quitter le jeu |
 
-## 📌 Compilation & Exécution
+## 📌 Compilation & Ex\u00e9cution
 
-1️⃣ **Cloner le dépôt** :
+1️⃣ **Cloner le d\u00e9p\u00f4t** :
 ```bash
 git@github.com:nariIng/42_cursus_project.git
 cd 42_cursus_project/cursus/so_long
@@ -115,17 +130,14 @@ make
 
 3️⃣ **Lancer le jeu** :
 ```bash
-./so_long map.ber
+./so_long maps/map.ber
 ```
-
-📷 *Capture d’écran du jeu en cours d’exécution :*  
-*(Ajoute ici une capture d’écran du jeu lancé)*  
 
 ## 🏆 Conclusion
 
-Le projet **So_Long** est une introduction passionnante à la **programmation de jeux en C** et à la **gestion d'affichage graphique**. Il permet de découvrir la manipulation d'images, la gestion des entrées utilisateur et l'affichage réactif dans une fenêtre graphique.
+Le projet **So_Long** est une introduction passionnante \u00e0 la **programmation de jeux en C** et \u00e0 la **gestion d'affichage graphique**. Il permet de d\u00e9couvrir la manipulation d'images, la gestion des entr\u00e9es utilisateur et l'affichage r\u00e9actif dans une fen\u00eatre graphique.
 
-📊 **Prêt à jouer et coder ton propre jeu ?** 🚀
+📊 **Pr\u00eat \u00e0 jouer et coder ton propre jeu ?** 🚀
 
 ---
 
