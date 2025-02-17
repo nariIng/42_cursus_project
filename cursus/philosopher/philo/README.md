@@ -8,7 +8,7 @@
 
 **Philosopher** est un projet de l'école **42** qui explore les concepts de **concurrence** et de **synchronisation** en implémentant le problème classique des **philosophes mangeurs**.
 
-Le but est d'utiliser des **threads** et des **mutex** pour gérer la synchronisation des ressources (fourchettes), tout en respectant les règles de l'algorithme de **Dijkstra (Turk)**.
+Le but est d'utiliser des **threads** et des **mutex** pour gérer la synchronisation des ressources (fourchettes), tout en respectant les règles de l'algorithme de **Dijkstra (Turk)**. J'ai choisi cet algorithme parcequ'il est, pour moi, celui qui permet le plus d'optimisation (Je repète, pour moi).
 
 ## 📌 Objectifs du projet
 
